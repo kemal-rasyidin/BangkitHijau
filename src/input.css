@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-gray-600 bg-opacity-70;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/***** Hamburger *****/
+.hamburger-line {
+  @apply my-2 block h-[2px] w-[30px] bg-white;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+#toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
+}
+
+/***** Swiper *****/
+.swiper-slide {
+  height: auto !important;
+}
+
+.swiper-content {
+  height: 100% !important;
+}
+
+.swiper-wrapper {
+  padding-bottom: 70px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0px !important;
+}
+
+/***** Breadcrumbs *****/
+.breadcrumbs li {
+  color: #374151;
+  display: inline;
+  max-width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breadcrumbs li + li::before {
+  content: '>';
+  /* content: url(img/arrow.right.svg); */
+  margin: 0 4px;
+}
+
+.breadcrumbs li + li a {
+  margin-left: 4px;
+}
