@@ -8,12 +8,12 @@ module.exports = {
     },
     darkMode: 'class',
     extend: {
-      // colors: {
-      //   ink: '#111827',
-      //   sea: '#3b82f6',
-      //   wolf: '#475569',
-      //   ginger: '#f97316',
-      // },
+      colors: {
+        ink: '#111827',
+        // sea: '#3b82f6',
+        wolf: '#6b7280',
+        ginger: '#f97316',
+      },
       screens: {
         '2xl': '1320px',
       },
