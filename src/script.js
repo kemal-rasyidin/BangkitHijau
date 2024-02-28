@@ -44,9 +44,9 @@ document.addEventListener('click', function (event) {
   }
 });
 
-// Course
+// Events
 document.addEventListener('DOMContentLoaded', function () {
-  var swiper = new Swiper('.courseSwiper', {
+  var swiper = new Swiper('.eventsSwiper', {
     breakpoints: {
       640: {
         slidesPerView: 2,
@@ -57,6 +57,29 @@ document.addEventListener('DOMContentLoaded', function () {
       1280: {
         slidesPerView: 4,
       },
+    },
+    spaceBetween: 15,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    speed: 3000,
+  });
+});
+
+// News
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.newsSwiper', {
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      // 1280: {
+      //   slidesPerView: 4,
+      // },
     },
     spaceBetween: 15,
     pagination: {

@@ -10,7 +10,6 @@ module.exports = {
     extend: {
       colors: {
         ink: '#111827',
-        // sea: '#3b82f6',
         wolf: '#6b7280',
         ginger: '#f97316',
       },
