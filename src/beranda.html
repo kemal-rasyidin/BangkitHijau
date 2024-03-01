@@ -1156,20 +1156,56 @@
     <!-- Info Section Start -->
     <section id="" class="pb-16 pt-32">
       <div class="container">
-        <div class="rounded-md bg-green-100 px-4 py-12 text-center">
-          <p class="mb-4 text-2xl font-bold text-ink">
+        <div
+          class="rounded-md bg-green-200 bg-cover px-4 py-12 text-center"
+          style="background-image: url(img/Gambar_Gunung.jpg)"
+        >
+          <p class="mb-4 text-2xl font-bold text-white">
             Dapatkan informasi terbaru kami
           </p>
-          <p class="mb-4 text-lg font-extralight text-wolf">
-            Jangan Sampai Terlewat informasi dari Bangkit Hijau
-          </p>
-          <a href="">
-            <div class="inline-block rounded-sm bg-ginger px-4 py-2">
-              <p class="text-base font-medium leading-relaxed text-white">
-                Langganan
-              </p>
+          <form action="#">
+            <div
+              class="mx-auto mb-3 max-w-screen-sm items-center space-y-4 sm:flex sm:space-y-0"
+            >
+              <div class="relative w-full">
+                <label for="email" class="mb-2 hidden text-sm font-medium"
+                  >Email address</label
+                >
+                <div
+                  class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+                >
+                  <svg
+                    class="h-5 w-5 text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    ></path>
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  class="block w-full rounded-lg bg-gray-50 p-3 pl-10 text-sm text-wolf outline-none focus:border-orange-500 focus:ring-ginger sm:rounded-none sm:rounded-l-lg"
+                  placeholder="Masukan Email"
+                  type="email"
+                  id="email"
+                  required=""
+                />
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="w-full cursor-pointer rounded-lg bg-ginger px-5 py-3 text-center text-sm font-medium text-white focus:ring-4 sm:rounded-none sm:rounded-r-lg"
+                >
+                  Langganan
+                </button>
+              </div>
             </div>
-          </a>
+          </form>
         </div>
       </div>
     </section>
@@ -1321,7 +1357,7 @@
                 <h2 class="mb-6 text-sm font-semibold uppercase text-white">
                   Tautan Navigasi
                 </h2>
-                <ul class="font-medium text-wolf dark:text-gray-400">
+                <ul class="font-medium text-wolf">
                   <li class="mb-4">
                     <a href="beranda.html" class="hover:underline">Beranda</a>
                   </li>
