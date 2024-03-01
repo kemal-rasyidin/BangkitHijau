@@ -76,7 +76,9 @@ body {
 .breadcrumbs li + li a {
   margin-left: 4px;
 }
-#backtotopp{
+
+/***** Back to top *****/
+#backtotopp {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -85,10 +87,9 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #374151;
+  background-color: #65a30d;
   color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
 }
-
