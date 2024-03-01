@@ -8,6 +8,7 @@ window.onscroll = function () {
   } else {
     header.classList.remove('navbar-fixed');
   }
+  fungsiscroll()
 };
 
 // Hamburger
@@ -119,3 +120,19 @@ detailsElements.forEach((details) => {
     });
   });
 });
+
+// backtotop
+let tombol = document.getElementById("backtotopp");
+
+function fungsiscroll(){
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop >  30) {
+    tombol.style.display = "block"
+  } else {
+    tombol.style.display = "none"
+  }
+}
+function backToTop(){
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
