@@ -96,10 +96,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper('.videoSwiper', {
     breakpoints: {
       640: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       // 1280: {
       //   slidesPerView: 4,
