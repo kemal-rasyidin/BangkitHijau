@@ -8,7 +8,7 @@ window.onscroll = function () {
   } else {
     header.classList.remove('navbar-fixed');
   }
-  fungsiscroll()
+  fungsiscroll();
 };
 
 // Hamburger
@@ -91,6 +91,33 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Video
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.videoSwiper', {
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 1,
+      },
+      // 1280: {
+      //   slidesPerView: 4,
+      // },
+    },
+    spaceBetween: 15,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    speed: 3000,
+  });
+});
+
 // Story
 document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper('.storySwiper', {
@@ -122,17 +149,16 @@ detailsElements.forEach((details) => {
 });
 
 // backtotop
-let tombol = document.getElementById("backtotopp");
+let tombol = document.getElementById('backtotopp');
 
-function fungsiscroll(){
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop >  30) {
-    tombol.style.display = "block"
+function fungsiscroll() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    tombol.style.display = 'block';
   } else {
-    tombol.style.display = "none"
+    tombol.style.display = 'none';
   }
 }
-function backToTop(){
+function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
