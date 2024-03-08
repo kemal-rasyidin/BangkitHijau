@@ -337,18 +337,19 @@
               <input
                 class="h-full w-full bg-gray-50 pr-2 text-base text-ink outline-none"
                 type="text"
-                id="search"
-                placeholder="Cari acara apa?"
+                id="search-input"
+                placeholder="Cari acara apa?" 
+                onkeyup="search()"
               />
             </div>
           </div>
         </div>
         <div
-          class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 newsSwiper"
         >
           <!-- bagian 1 -->
           <div
-            class="zoom swiper-slide rounded-md border border-solid border-slate-200 bg-white transition duration-300 hover:shadow-sm"
+            class="zoom swiper-slide rounded-md border border-solid border-slate-200 bg-white transition duration-300 hover:shadow-sm swiper-slide"
           >
             <a href="acara-detail.html" class="block h-full">
               <div class="pb-6">

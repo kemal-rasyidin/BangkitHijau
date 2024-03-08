@@ -162,3 +162,23 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// search berita-acara
+function search() {
+  var input, filter, swiper, slides, slide, a, i, txtValue;
+    input = document.getElementById('search-input');
+    filter = input.value.toUpperCase();
+    swiper = document.querySelector('.newsSwiper');
+    slides = swiper.getElementsByClassName('swiper-slide');
+
+    for (i = 0; i < slides.length; i++) {
+      slide = slides[i];
+      a = slide.getElementsByTagName('a')[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        slide.style.display = '';
+      } else {
+        slide.style.display = 'none';
+      }
+    }
+}
