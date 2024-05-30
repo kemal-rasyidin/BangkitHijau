@@ -1,1 +1,1 @@
-https://bangkithijau.netlify.app/
+Website yang bertujuan untuk komunitas pecinta alam
